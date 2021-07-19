@@ -1,0 +1,4 @@
+# This shouldn't produce -99
+A,B,20
+B,C,-20
+C,A,-20

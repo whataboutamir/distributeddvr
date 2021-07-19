@@ -1,0 +1,20 @@
+# Simple Negative Cycle
+# Contains a simple negative cycle, also includes multi-character node names.
+# AA <--(-1)--- AB <---------(1)------- CC                    F <--(1)-- G
+#  |             ^ <-------------------(1)------------------- ^
+#  |             |                                            |
+# (-2)          (1)                                         (-50)
+#  |             |                                            |
+#  v             |                                            |
+# AD ---(1)-->  AE <-------------------------------------------
+#
+# File Format:
+# Node, Neighbor, Weight, Neighbor, Weight  (repeat as needed)
+#
+AA,AD,-2
+AB,AA,-1,CC,0
+CC,AB,0
+AD,AE,1
+AE,AB,1,F,-50
+F,AB,1,AE,-50
+G,F,1

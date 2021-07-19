@@ -1,0 +1,34 @@
+# Complex Topology
+# NOTE: Node names were chosen randomly and are not meant to indicate any explicit or implied preference.
+#
+#(-50)---ATT
+#  |    ^ | ^
+#  |   /  |  \
+#  | (50) |  (2)
+#  v /    |    \
+# UGA   (-8)    VZ
+#  ^ \    |      ^
+#  | (50) |       \
+#  |   \  |       (8)
+#  |    v v         \
+# (0)---GSAT--(-3)-> VONA
+#         ^         /
+#          \       /
+#           --(3)--
+#
+# File Format:
+# Node, Neighbor, Weight, Neighbor, Weight  (repeat as needed)
+#
+
+
+VONA,VZ,8
+VZ,ATT,2
+ATT,UGA,-50,GSAT,-8
+GSAT,VONA,-3,UGA,0
+UGA,ATT,50,GSAT,50
+
+#VONA,VZ,8,GSAT,3
+#VZ,ATT,2
+#ATT,UGA,-50,GSAT,-8
+#GSAT,VONA,-3,UGA,0
+#UGA,GSAT,50

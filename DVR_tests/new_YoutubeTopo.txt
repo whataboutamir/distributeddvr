@@ -1,0 +1,7 @@
+# from https://www.youtube.com/watch?v=iTW2yFYd1Nc
+S,A,5,C,-2
+A,B,1
+B,C,2,D,7,t,3
+C,A,2,D,3
+D,t,10
+t
