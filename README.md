@@ -1,8 +1,8 @@
 # Distance Vector Routing
 
-Distance Vector Routing (DVR) protocols use a fully distributed algorithm that finds the shortest path by solving the <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">Bellman-Ford algorithm</a> at each node. Here, we implement a distributed version of the Bellman-Ford algorithm and use it to calculate routing paths in a network.
+Distance Vector Routing (DVR) protocols use a fully distributed algorithm that finds the shortest path by solving the <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm">Bellman-Ford algorithm</a> at each node. This is an implementation of a distributed version of the Bellman-Ford algorithm and it can be used to calculate routing paths in a network.
 
-In "pure" DVR protocols, the hop count determines the distance between nodes. But, some DVR protocols that operate at higher levels (like the border gateway protocol) make routing decisions based on business relationships (or weightings) in addition to a hop count. Our implementation considers weighted (including negative weights), directed links in our network topologies (represented in `Topology.py`).
+In "pure" DVR protocols, the hop count determines the distance between nodes. But, some DVR protocols that operate at higher levels (like BGP) make routing decisions based on business relationships (or weightings) in addition to a hop count. Our implementation considers weighted (including negative weights), directed links in our network topologies (represented in `Topology.py`).
 
 In this simulation, we can think of nodes (i.e., router; represented in `Node.py`) as individual autonomous systems (ASes) and the weights on the links as a reflection of the business relationship between ASes.
 
